@@ -1,0 +1,24 @@
+{
+    "sellingProducts": [
+      {
+        "image": "products/tracker008.jpg",
+        "name": "Standard Tracker",
+        "description": "GPS,Website and App platforms",
+        "price": "Ksh:8500"
+      },
+      {
+        "image": "products/tracker011.png",
+        "name": "Silver",
+        "description": "GPS,Application,Cut off feature and customer services",
+        "price": "Ksh:12000"
+        
+      },
+      {
+        "image": "products/tracker012.png",
+        "name": "Gold",
+        "description": "Custom made solution for the challenge faced",
+        "price": "Ksh:17000"
+      }
+      
+    ]
+  }
