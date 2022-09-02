@@ -44,7 +44,9 @@ function handleComments(comments){
         customerComments:comments.target.input.value
     }
  
-   
+   renderProducts(posted)
+   postComments(posted)
+
 
 }
 
