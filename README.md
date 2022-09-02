@@ -1,5 +1,6 @@
-# Task:  Salama Landing Page Project Author Elius Gachango
+# Task:  Salama Landing Page Project 
 
+# Author: Elius Gachango
 ## Learning Goals From This Project
 
 * Build a basic website ,HTML/CSS/JS front-end that accesses data from a local host.
@@ -38,7 +39,7 @@
 
 ###  Functionality of the Website 
 1.Clicking the products to show the  products being sold  from the json servers.
-2.Comment section that one can view and also delete if need correction. 
+2.Comment section that one can view and also delete if needed. 
 3. The Landing Page is responsive to Screens
 
 links
