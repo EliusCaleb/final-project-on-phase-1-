@@ -44,9 +44,7 @@ function handleComments(comments){
         customerComments:comments.target.input.value
     }
  
-   renderProducts(posted)
-   postComments(posted)
-
+   
 
 }
 
@@ -71,17 +69,7 @@ function renderProducts(sellingProducts){
     
     document.querySelector('#collection').appendChild(card)
 }  
-function postComments(comments){
-    fetch(devices ,{
-       method:'POST',
-        headers: {
-            'Content-type':'application/json'
-        },
-         body:JSON.stringify(comments)
- 
-    })
-    .then(res=>res.json)
-    .then(sellingProducts=>console.log(sellingProducts))
+
  
  
 function postComments(comments){
@@ -113,4 +101,4 @@ initialize();
   
 
 
-}
+
