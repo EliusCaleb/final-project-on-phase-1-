@@ -23,9 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let  form= document.querySelector('.customer')
       form.addEventListener('submit',(e) =>{
         e.preventDefault()
-        handleComments(e.target.input_text.value)
+        handleComments(e.target.input.value)
         form.reset();
       })
+      
 
 })
  // function to show comments and  delete them
@@ -39,15 +40,8 @@ function handleComments(comments){
     p.appendChild(x)
     document.querySelector('#list').appendChild(p)
 
-    let posted ={
-        id:1,
-        customerComments:comments.target.input.value
-    }
- 
-   renderProducts(posted)
-   postComments(posted)
 
-
+    
 }
 
 function deleteComments(e){
@@ -72,20 +66,6 @@ function renderProducts(sellingProducts){
     document.querySelector('#collection').appendChild(card)
 }  
 
- 
- 
-function postComments(comments){
-    fetch(devices ,{
-       method:'POST',
-        headers: {
-            'Content-type':'application/json'
-        },
-         body:JSON.stringify(comments)
- 
-    })
-    .then(res=>res.json)
-    .then(sellingProducts=>console.log(sellingProducts))
-}
 
 function loadingData(){
     fetch(devices)
@@ -98,7 +78,20 @@ function  initialize(){
 }
 initialize();
  
-
+ 
+function postComments(comments){
+    fetch(devices ,{
+       method:'POST',
+        headers: {
+            'Content-type':'application/json'
+        
+        },
+         body:JSON.stringify(comments)
+ 
+    })
+    .then(res=>res.json)
+    .then(sellingProducts=>console.log(sellingProducts))
+}
 
   
 
