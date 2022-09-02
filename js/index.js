@@ -1,5 +1,5 @@
-
-let devices =  "https://eliuscaleb.github.io/json-api/products.json";
+let devices = "https://eliuscaleb.github.io/json-api/products.json"
+//let devices =  " http://localhost:3000/sellingProducts";
 document.addEventListener("DOMContentLoaded", () => {
     let showsproducts= document.querySelector('#showproducts')
     showsproducts.addEventListener('click',showHide)
@@ -38,10 +38,7 @@ function handleComments(comments){
     x.textContent= 'x'
     p.textContent=  `${comments}`
     p.appendChild(x)
-    document.querySelector('#list').appendChild(p)
-
-
-    
+    document.querySelector('#list').appendChild(p)    
 }
 
 function deleteComments(e){
@@ -68,10 +65,13 @@ function renderProducts(sellingProducts){
 
 
 function loadingData(){
-    fetch(devices)
-    .then (rep=> rep.json())
-    .then(data => data.forEach(sellingProducts =>renderProducts(sellingProducts)))
+   
+     fetch(devices)
+     .then(res=> res.json())    
+    .then(re => re.Array.from(sellingProducts=>renderProducts(sellingProducts))) 
 }
+
+
 
 function  initialize(){
     loadingData()    
@@ -79,19 +79,7 @@ function  initialize(){
 initialize();
  
  
-function postComments(comments){
-    fetch(devices ,{
-       method:'POST',
-        headers: {
-            'Content-type':'application/json'
-        
-        },
-         body:JSON.stringify(comments)
- 
-    })
-    .then(res=>res.json)
-    .then(sellingProducts=>console.log(sellingProducts))
-}
+
 
   
 
