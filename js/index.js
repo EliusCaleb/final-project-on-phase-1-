@@ -1,5 +1,5 @@
 
-let devices =  " http://localhost:3000/sellingProducts";
+let devices =  "https://eliuscaleb.github.io/json-api/products.json";
 document.addEventListener("DOMContentLoaded", () => {
     let showsproducts= document.querySelector('#showproducts')
     showsproducts.addEventListener('click',showHide)
