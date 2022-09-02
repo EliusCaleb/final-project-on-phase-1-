@@ -1,5 +1,5 @@
-let devices = "https://eliuscaleb.github.io/json-api/products.json"
-//let devices =  " http://localhost:3000/sellingProducts";
+//let devices = "https://eliuscaleb.github.io/json-api/products.json"
+let devices =  " http://localhost:3000/sellingProducts";
 document.addEventListener("DOMContentLoaded", () => {
     let showsproducts= document.querySelector('#showproducts')
     showsproducts.addEventListener('click',showHide)
@@ -68,7 +68,7 @@ function loadingData(){
    
      fetch(devices)
      .then(res=> res.json())    
-    .then(re => re.Array.from(sellingProducts=>renderProducts(sellingProducts))) 
+    .then(re => re.forEach(sellingProducts=>renderProducts(sellingProducts))) 
 }
 
 
