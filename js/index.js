@@ -35,7 +35,7 @@ function handleComments(comments){
     let p = document.createElement('p')
     let x = document.createElement('button')
     x.addEventListener('click',deleteComments)
-    x.textContent= 'x'
+    x.textContent= 'cancel'
     p.textContent=  `${comments}`
     p.appendChild(x)
     document.querySelector('#list').appendChild(p)    

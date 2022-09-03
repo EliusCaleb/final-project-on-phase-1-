@@ -87,6 +87,29 @@ p{
 
 }
 
+ textarea{
+     height:60px;
+     border: none;
+     text-align: center;
+     border-bottom:  5px solid #aaa;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    resize:none;
+    outline: none;
+    
+      
+ }
+ input[type="submit"], button {
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    outline: none;
+ }
+
 .row{
     display:flex;
     align-items: center;
