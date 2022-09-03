@@ -92,12 +92,12 @@ p{
      border: none;
      text-align: center;
      border-bottom:  5px solid #aaa;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    resize:none;
-    outline: none;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     text-align: center;
+     resize:none;
+     outline: none;
     
       
  }
@@ -106,7 +106,6 @@ p{
     padding: 5px 15px;
     font-weight: bold;
     cursor: pointer;
-
     outline: none;
  }
 
