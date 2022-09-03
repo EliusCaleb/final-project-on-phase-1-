@@ -68,7 +68,8 @@ function loadingData(){
    
      fetch(devices)
      .then(res=> res.json())    
-    .then(re => re.forEach(sellingProducts=>renderProducts(sellingProducts))) 
+    .then(data =>  data.forEach(sellingProducts=>renderProducts(sellingProducts)))
+    
 }
 
 
