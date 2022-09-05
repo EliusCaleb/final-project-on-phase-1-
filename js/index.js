@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             deviceImages.style.display = "none";
         }
 
-    }  
+    };  
     
     //comments section of the customer
       let  form= document.querySelector('.customer')
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       
 
-})
+});
  // function to show comments and  delete them
 
 function handleComments(comments){
@@ -39,11 +39,11 @@ function handleComments(comments){
     p.textContent=  `${comments}`
     p.appendChild(x)
     document.querySelector('#list').appendChild(p)    
-}
+};
 
 function deleteComments(e){
     e.target.parentNode.remove()
-}
+};
 
 // fetching the products from a local host server
 
@@ -61,7 +61,7 @@ function renderProducts(sellingProducts){
     </div>`
     
     document.querySelector('#collection').appendChild(card)
-}  
+};  
 
 
 function loadingData(){
@@ -70,7 +70,7 @@ function loadingData(){
      .then(res=> res.json())    
     .then(data =>  data.forEach(sellingProducts=>renderProducts(sellingProducts)))
     
-}
+};
 
 
 
